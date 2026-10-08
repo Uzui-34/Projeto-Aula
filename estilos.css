@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*======================
+HEADER
+========================*/
+
+header{
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+header h1{
+    font-size: 25px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/*======================
+HERO
+========================*/
+
+.hero{
+    height: 400px;
+    background-image: url(hero.jpg);
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-align: center;
+}
+
+.hero h2{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.hero p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero button{
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    background-color: #445017;
+    color: white;
+}
+
+/*======================
+SOBRE
+========================*/
+
+.sobre{
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.sobre h2{
+    margin-bottom: 20px;
+}
+
+.sobre p{
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/*======================
+GALERIA
+========================*/
+
+.galeria{
+    padding: 60px 10%;
+    background-color: #f2f2f2;
+}
+
+.galeria h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.grid-galeria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grid-galeria img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/*======================
+RODAPE
+========================*/
+
+footer{
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/*======================
+RESPONSIVO
+========================*/
+
+@media (max-width: 800px){
+    .grid-galeria{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h2{
+        font-size: 35px;
+        color: red;
+    }
+}
+
+.cabeça h1{
+    color: red;
+}
+
